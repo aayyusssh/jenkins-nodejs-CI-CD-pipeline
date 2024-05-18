@@ -1,5 +1,5 @@
 {
-  "name": "jenkins_demo",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,9 +14,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
-  },
+},
+"devDependencies": {
+  "jest": "^26.6.3",
+  "react-scripts": "^4.0.0"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
