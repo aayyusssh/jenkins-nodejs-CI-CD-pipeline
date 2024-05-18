@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent{
+        label 'slave1'
+    }
+     tools {
+        nodejs 'Node'
+    }
 
     stages {
         stage('Checkout') {
